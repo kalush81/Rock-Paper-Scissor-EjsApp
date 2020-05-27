@@ -1,0 +1,26 @@
+rzeczy do pocwiczenia:
+
+1. socket.join(room, [ack]). Douczyc sie callbacka - ack, pocwiczyc przekazywanie roznych
+   danych poprzed [ack] callback.
+
+2. socket.leave(room) -  douczyc sie.
+
+3. socket.rooms - douczyc sie , sytuacje uzycia - kiedy i po co.
+
+4. namespace.to(room) vs socket.to(room) - bardzo wazna, subtelna roznica.
+
+5. pocwiczyc przesylanie wiadomosci pomiedzy pokojami i calym serwerem.
+
+
+rzeczy do zrobienia:
+
+
+1. zablokowac mozliwosc ( server ) dolaczania do pokoju gdy sa juz tam dwie osoby. *
+
+2. przekierowac osobe ktora probuje sie dostac do pokoju jako trzecia osoba (client) *
+
+3. zablokowac mozliwosc dodawania playera ( addPlayer ), jesli juz istnieje o takim samym nicku. *
+
+4. wyswietlic ilosc osob w danym pokoju. 0, 1 lub 2. ( postarac sie uzyc calback [ack]).
+
+5. gdy w danym pokoju sa 2, to zablokowac mozliwosc klikniecia w ten pokoj ( client ).

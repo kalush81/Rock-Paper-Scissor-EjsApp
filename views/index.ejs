@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action="/gamemode">
+      <div class="form-control">
+          <label for="username">Username</label>
+          <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter username..."
+              required
+          />
+      </div>
+      <div class="form-control">
+          <label for="room">Room</label>
+          <select name="room" id="room">
+              <!-- <option value="Mars" disabled>Mars</option>
+              <option value="Venus">Venus</option> -->
+          </select>
+      </div>
+      <button type="submit" class="btn">Join Chat</button>
+  </form>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/index.js"></script>
+  </body>
+</html>

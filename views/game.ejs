@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= room %> </title>
+</head>
+<body>
+    <p> <%= username %> in the room: <%= room %></p>
+    <p></p>
+    <p id='newUser'></p>
+    
+    <div class="match-between">
+
+    </div>
+
+    <div class="winner">
+        
+    </div>
+
+    <div class="whoWon">
+
+    </div>
+
+    <div class="play-box" style="display: none">
+        <button>rock</button>
+        <button>paper</button>
+        <button>scissors</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/gamemode.js"></script>
+    <script src="/javascripts/play.js"></script>
+</body>
+</html>
